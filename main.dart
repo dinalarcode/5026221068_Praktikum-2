@@ -70,7 +70,7 @@ class SelfDescription extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) =>
-                            RecipeDetailPage(recipe: aboutme[index]),
+                            DetailInformation(recipe: aboutme[index]),
                       ),
                     );
                   },
@@ -80,10 +80,10 @@ class SelfDescription extends StatelessWidget {
   }
 }
 
-class RecipeDetailPage extends StatelessWidget {
+class DetailInformation extends StatelessWidget {
   final Map<String, dynamic> recipe;
 
-  RecipeDetailPage({required this.recipe});
+  DetailInformation({required this.recipe});
 
   @override
   Widget build(BuildContext context) {
